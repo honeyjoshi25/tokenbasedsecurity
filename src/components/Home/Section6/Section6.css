@@ -1,0 +1,46 @@
+.bottomDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -100px;
+  background-color: #f5f7fa;
+  width: 100%;
+  padding: 120px 0px;
+  margin-bottom: 0%;
+}
+
+/* .section6{
+  background-color: #F5F7FA;
+} */
+
+.bottomDiv header {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.bottomDiv button {
+  margin-top: 50px;
+  height: 50px;
+  border-radius: 25px;
+  width: 200px;
+  border: none;
+  font-size: 18px;
+  background-color: #1a60f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.bottomDiv button:hover {
+  background-color: #080a60;
+}
+
+@media only screen and (min-width: 1400px) {
+  .bottomDiv {
+    margin-top: 10%;
+    width: 100vw;
+    margin-left: -18%;
+    /* margin-bottom: -3.5%; */
+  }
+}

@@ -1,0 +1,96 @@
+.howItWorksSec3 {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../../assets/images/background/howItWorksSec3.png');
+  background-color: #cccccc;
+  height:820px;
+  background-size: cover;
+  width:100vw;
+  position: relative;
+}
+
+.hiwsec3Title header {
+  width: 784px;
+  height: 66px;
+  flex-grow: 0;
+  margin-top: -8%;
+  /* margin-left: 25%; */
+
+  font-size: 48px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.hiwSec3Cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hiwSec3card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 250px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: -1%;
+}
+
+.hiwSec3card img {
+  width: 112px;
+  height: 112px;
+  flex-grow: 0;
+  margin: 84px 100px 41px 91px;
+  object-fit: contain;
+}
+
+.cardDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardDesc span {
+  width: 245px;
+  height: 44px;
+  flex-grow: 0;
+  margin: 0 25px 0 24px;
+
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.18;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.cardDesc p {
+  width: 250px;
+  height: 176px;
+  flex-grow: 0;
+  margin: 10px 0 0;
+
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.18;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}

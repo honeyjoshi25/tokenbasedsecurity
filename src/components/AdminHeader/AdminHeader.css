@@ -1,0 +1,75 @@
+.adminheader {
+  display: flex;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 30px;
+  opacity: 100%;
+  z-index: 999;
+  top: 0;
+  position: sticky;
+}
+
+.adminheaderActive {
+  display: flex;
+  height: 50px;
+  background-color: white;
+  margin-top: 30px;
+  opacity: 100%;
+  z-index: 999;
+  top: 0;
+  position: sticky;
+  padding: 20px;
+}
+
+.adminnavWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.adminnavLeft img {
+  /* width: 168px; */
+  height: 57px;
+  cursor: pointer;
+}
+
+.adminnavLeft {
+  margin-left: 50px;
+}
+
+.adminnavRight {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.adminnavItem {
+  font-family:Manrope;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.adminnavItem:hover {
+  color: #1a60f6;
+}
+.adminnavItem #active {
+  color: #1a60f6;
+}
+
+.adminnavRight button {
+  height: 50px;
+  border-radius: 15px;
+  width: 200px;
+  border: none;
+  font-size: 16px;
+  background-color: #1a60f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.adminnavRight button:hover {
+  background-color: #080a60;
+}

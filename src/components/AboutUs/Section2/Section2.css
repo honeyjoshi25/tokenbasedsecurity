@@ -1,0 +1,316 @@
+.section2Aboutus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ourTeam {
+  display: flex;
+  flex-direction: column;
+}
+.ourTeam header {
+  margin: 30px 441px;
+  font-size: 48px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+.ourTeam span {
+  margin: 6px 235px 49px;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.18;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: url('../../../assets/images/background/img_BGAboutus.png');
+  background-size: 100vw 650px;
+  background-repeat: no-repeat;
+  background-position: right 110px;
+  /* margin-left: 5%; */
+}
+.background {
+  position: relative;
+  width: 270px;
+  height: 380px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  padding: 18px 0 0;
+  background-color: #031642;
+}
+.backgroundTitle {
+  width: 292px;
+  height: 44px;
+  margin: 0 50px 57px 18px;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.18;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.backgroundSpan {
+  width: 312px;
+  height: 83px;
+  margin: 20px 30px 380px 18px;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.18;
+  letter-spacing: normal;
+  text-align: left;
+  color: #38aaf4;
+}
+.profileImage {
+  visibility: visible;
+  /* position: absolute; */
+  width: 100%;
+  height: 400px;
+ 
+}
+.aboutUsTeamImg {
+  /* height: 10%; */
+  width: 270px;
+  margin-top: -40px;
+}
+.para {
+  position: relative;
+  width: 235px;
+  height: 286px;
+  margin-top: -380px;
+  margin-left: 20px;
+
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.16;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  /* visibility: hidden; */
+}
+.LI-In-Bug-1 {
+  margin-top: -40px;
+}
+.LI-In-Bug-1 img {
+  width: 20px;
+  height: 20px;
+  /* margin-top: -40px; */
+  /* margin: 68px 6px 3px 0; */
+
+  cursor: pointer;
+}
+.View-Profile- {
+  width: 99px;
+  height: 35px;
+  /* margin: 66px 177px 0 6px; */
+  margin-top: -40px;
+
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.16;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+.img__description_layer {
+  width: 280px;
+  height: 250px;
+  position: absolute;
+  color: #fff;
+  visibility: hidden;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+
+  /* visibility .2s; */
+}
+
+.background:hover {
+  /* position: absolute; */
+  width: 270px;
+  height: 380px;
+  padding: 18px 0 0;
+  background-color: #090c13;
+  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.34);
+}
+
+.background:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+.background:hover .profileImage {
+  visibility: hidden;
+}
+
+
+
+/* .Background:hover .With-over-20-years-of-experience-in-design-development-and-hospitality-Shaan-has-developed-and-ma {
+visibility: visible;
+} */
+@media only screen and (min-width: 1400px) {
+
+  .section2Aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 130vh;
+    padding-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .ourTeam span {
+    margin: 6px 235px 49px;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.18;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+  }
+
+  .background {
+    position: relative;
+    width: 360px;
+    height: 502px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    padding: 18px 0 0;
+    background-color: #031642;
+  }
+ 
+  .img__description_layer {
+    width: 360px;
+    height: 502px;
+    position: absolute;
+    color: #fff;
+    visibility: hidden;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+    /* visibility .2s; */
+  }
+
+  .background:hover {
+    /* position: absolute; */
+    width: 360px;
+    height: 502px;
+    padding: 18px 0 0;
+    background-color: #090c13;
+    box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.34);
+  }
+  
+  .background:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+  }
+  .background:hover .profileImage {
+    visibility: hidden;
+  }
+
+  .aboutUsTeamImg {
+    height: auto;
+    width:360px;
+    margin-top: -45px;
+  }
+
+  .backgroundTitle {
+    width: 292px;
+    height: 30px;
+    margin: 0 50px 57px 18px;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.18;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .backgroundSpan {
+    width: 312px;
+    height: 70px;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.18;
+    letter-spacing: normal;
+    text-align: left;
+    color: #38aaf4;
+  }
+
+  .para {
+    position: relative;
+    width: 265px;
+    height: 250px;
+    margin-top: -380px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.16;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+ 
+  .LI-In-Bug-1 img {
+    width: 24px;
+    height: 24px;
+    margin-top: 130px;
+    cursor: pointer;
+  }
+  .View-Profile- {
+    width: 120px;
+    height: 35px;
+    margin-top:86px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.16;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+}

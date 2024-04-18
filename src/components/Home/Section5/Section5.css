@@ -1,0 +1,99 @@
+.section5 {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  position: relative;
+  margin-top: 140px;
+  margin-bottom: 50px;
+  height: 700px;
+  width: 100%;
+}
+
+.sec5Left {
+  /* width: 50%; */
+  height: 600px;
+}
+
+.sec5Left span {
+  height: 132px;
+  margin: 150px 100px 135px;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #212121;
+}
+
+.sec5Left span span {
+  text-align: left;
+  margin-right: 360px;
+}
+
+.sec5LeftCard {
+  display: flex;
+
+  position: relative;
+  left: 100px;
+  margin-top: 30px;
+}
+
+.sec5LeftCard img {
+  position: absolute;
+  /* width: 50px; */
+  height: 70px;
+}
+
+.sec5LeftCard span {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.sec5LeftPara {
+  position: absolute;
+  left: 100px;
+
+  line-height: 2;
+  font-size: 16px;
+  font-weight: 500;
+  width: 450px;
+}
+
+.sec5Right {
+  /* width: 50%; */
+  /* left: 500px; */
+  /* position: relative; */
+  /* margin-right: 10vw; */
+  margin-top: 6%;
+}
+
+.sec5Right img {
+  /* left: 170px; */
+  width: 590px;
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 1400px) {
+  .sec5Right {
+    /* margin-left: 15vw; */
+    margin-top: 4.5vw;
+  }
+
+  .sec5Right img {
+    width: 800px;
+    margin-left: 11vw;
+  }
+
+  .sec5LeftCard {
+    margin-top: 13%;
+  }
+
+  .sec5Left {
+    padding-top: 5%;
+    height: 600px;
+    margin-left: 7vw;
+  }
+
+}

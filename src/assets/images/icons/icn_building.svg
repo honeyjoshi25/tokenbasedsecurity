@@ -1,0 +1,19 @@
+<svg width="90" height="97" viewBox="0 0 90 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#xiddvyktka)">
+        <path d="M25.947 11a38.105 38.105 0 1 1 38.106 66 38.105 38.105 0 0 1-38.106-66z" fill="#1C2FF7"/>
+        <path d="M42.625 38.25h-4.75V43h4.75v-4.75zM42.625 47.75h-4.75v4.75h4.75v-4.75z" fill="#fff"/>
+        <path d="M49.75 62.003h14.251v-4.75h-2.375v-19a2.375 2.375 0 0 0-2.375-2.376h-7.125v-4.75A2.375 2.375 0 0 0 50.814 29l-9.5-4.75a2.375 2.375 0 0 0-2.126 0l-9.5 4.75a2.375 2.375 0 0 0-1.313 2.126v26.126H26v4.75h23.75zm7.126-21.376v16.626h-4.75V40.627h4.75zm-23.75-8.033 7.125-3.563 7.125 3.563v24.659h-14.25v-24.66z" fill="#fff"/>
+    </g>
+    <defs>
+        <filter id="xiddvyktka" x=".895" y="5.898" width="88.21" height="90.203" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="8"/>
+            <feGaussianBlur stdDeviation="3"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_443339_4119"/>
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_443339_4119" result="shape"/>
+        </filter>
+    </defs>
+</svg>

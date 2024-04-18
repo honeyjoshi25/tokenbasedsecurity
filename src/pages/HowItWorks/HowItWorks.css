@@ -1,0 +1,36 @@
+.howItworks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: -5%;
+   
+}
+
+.hiwTopclass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbarCustom {
+    width: 73%;
+    position: absolute;
+    background-color: white;
+  
+    margin-left: 150px;
+    margin-right: 135px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 87px 0 87px;
+    cursor: pointer;
+    transform: translate(0px, 500px);
+    box-shadow: 0 20px 47px -8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+  }

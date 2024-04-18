@@ -1,0 +1,214 @@
+.createPage {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4%;
+  margin-bottom: 15%;
+}
+
+.CreateCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 50%;
+
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 7px 15px;
+}
+.craetetitle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 53%;
+  margin-top: 20px;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.requiredfield {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  color: gray;
+}
+
+.span {
+  color: red;
+  margin-right: 5px;
+}
+
+.uploadImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.uploadImage p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.uploadImage p span {
+  color: red;
+  margin-left: 5px;
+  transform: translate(310px, -35px);
+  position: absolute;
+}
+
+.uploadImage span {
+  display: flex;
+  align-items: flex-start;
+  width: 320px;
+  font-size: 12px;
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.leftCard {
+  width: 60%;
+}
+.rightcard {
+  width: 50%;
+  margin-top: 50px;
+}
+.imageDetails {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.imageDetails p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.imageDetails p span {
+  color: red;
+}
+
+.imageDetails span {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.imageName {
+  width: 450px;
+  height: 40px;
+  /* border-radius: 10px;
+    border: 1px solid lightgray; */
+  border: none;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+.imageUrl {
+  width: 450px;
+  height: 40px;
+  /* border-radius: 10px;
+    border: 1px solid lightgray; */
+  border: none;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+.imagedesc {
+  width: 450px;
+  height: 40px;
+  /* border-radius: 10px;
+    border: 1px solid lightgray; */
+  border: none;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+.imagesupply {
+  width: 650px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+.createButton {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.buttoncreate {
+  height: 50px;
+  border-radius: 15px;
+  width: 100px;
+  border: none;
+  font-size: 16px;
+  background-color: #1a60f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.buttoncreate:hover {
+  background-color: #080a60;
+}
+.dragDrop {
+  position: relative;
+  border: 2px dashed gray;
+  border-radius: 10px;
+  height: 300px;
+  width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  color: gray;
+  font-weight: 600;
+  flex-direction: column;
+}
+.dragDropspan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: sticky;
+  overflow: hidden;
+}
+.dragDropspan p {
+  font-size: 16px;
+}
+/* .dragDrop p{
+    position: sticky;
+    overflow: hidden;
+}
+
+.dragDrop span{
+    position: sticky;
+    overflow: hidden;
+} */
+.dragDrop img {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  height: 300px;
+  width: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.dragDrop span {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}

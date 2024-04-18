@@ -1,0 +1,62 @@
+.RequestInvite button {
+  height: 50px;
+  border-radius: 25px;
+  width: 200px;
+  border: none;
+  font-size: 20px;
+  background-color: #1a60f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Manrope;
+}
+
+.RequestInvite button:hover{
+    background-color: #080a60;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cancelbtn {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.cancelbtn  img{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.modalTextfield {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.modalTextfield button {
+  margin-top: 30px;
+  height: 50px;
+  border-radius: 25px;
+  width: 200px;
+  border: none;
+  font-size: 20px;
+  background-color: #1a60f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Manrope;
+}
+
+.modalTextfield button:hover {
+  background-color: #080a60;
+}

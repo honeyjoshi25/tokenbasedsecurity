@@ -1,0 +1,45 @@
+.section3aboutus {
+  display: flex;
+ 
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* margin-top: 100px; */
+  margin-bottom: -12%;
+}
+
+
+
+.aboutusTopdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: #1e31f9;
+  width:100%;
+  margin-top: 15%;
+}
+
+@media only screen and (min-width: 1400px) {
+  .section3aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .aboutusTopdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: #1e31f9;
+    width:100%;
+    margin-top: 20%;
+  }
+}
+
