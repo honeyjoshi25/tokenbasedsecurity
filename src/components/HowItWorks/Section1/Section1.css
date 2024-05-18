@@ -1,87 +1,21 @@
-.howItWorksSec1 {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin-bottom: 5%;
-}
-
 .sec1Title {
-  display: flex;
-  margin-top: -90px;
-  background-image: url("../../../assets/images/background/banner_bg_white_03.png");
-  /* background-color: #cccccc; */
-  width: 100vw;
+  background: url("../../../assets/images/background/banner_bg_white_03.png")
+    no-repeat;
   background-size: cover;
 }
 
-.sec1Title img {
-  left: 73%;
-  position: relative;
-  /* margin-left: 1060px; */
-  width: 369px;
-  /* height: 350px; */
-  margin-top: 212px;
-}
-
-.sec1Title header {
-  position: absolute;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 85%;
-  height: 132px;
-  left: 5%;
-  margin-top: 209px;
-  font-size: 48px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
+.sec1Title h1 {
   color: #1e31f9;
 }
-.sec1Title span {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+
+.navbarCustom {
   position: absolute;
-  margin-top: 360px;
-  width: 1158px;
-  height: 44px;
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.18;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000;
-  left: 5.2%;
+  top: 90% !important;
+  box-shadow: 0 20px 47px -8px rgba(0, 0, 0, 0.1);
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 1400px) {
-  .howItWorksSec1 {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin-bottom: 5%;
-  }
-
-  .sec1Title img {
-    left: 82%;
-  }
-
-  .sec1Title {
-    margin-top: -90px;
-    background-image: url("../../../assets/images/background/banner_bg_white_03.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-  }
-
-  .sec1Title header {
-    width: 72%;
+@media only screen and (max-width: 600px) {
+  .sec1Title h1 {
+    width: 100% !important;
   }
 }

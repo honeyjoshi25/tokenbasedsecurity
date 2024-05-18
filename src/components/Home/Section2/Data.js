@@ -5,14 +5,14 @@ import img3 from '../../../assets/images/icons/icn_flexible.svg'
 export const Data =[{
     img:img1 ,
     title:'Fractional Investing',
-    desc:"Private markets are generally hard to access. We slice up investments into security tokens and give you access to hassle free investing"
+    desc:"Accessing private marketplaces is typically difficult. We provide hassle-free investing by dividing money into security tokens"
 },
 {
     img:img2,
     title:'Driving Liquidity',
-    desc:'Private markets are typically illiquid. You can trade 24x7 on our P2P marketplace with minimum restrictions on lock ups'
+    desc:'Most of the time, private markets lack liquidity. With the fewest lockup limitations possible, you can trade on our P2P marketplace around-the-clock'
 },{
     img:img3,
     title:'Curated Investments',
-    desc:'Diversification is key to any investment strategy. We offer select investment opportunities across varied	 asset classes on our digital platform'
+    desc:'In any investment strategy, diversification is crucial. Utilizing our digital platform, we provide a range of asset classes with carefully chosen investing options'
 }]

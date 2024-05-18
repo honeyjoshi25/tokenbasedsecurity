@@ -1,17 +1,13 @@
-import React from 'react'
-import './Section3.css'
+import React from "react";
+import "./Section3.css";
 
 export const Section3 = () => {
   return (
-    <div className="section3aboutus">
-      <section>
-        <div className="aboutusTopdiv">
-          Our dream is to create equal <br />
-          opportunities for investment and <br /> a faster, safer and simpler
-          way to trade
-        </div>
-      </section>
-      
+    <div className="section3aboutus w-100 mt-5 p-5 d-flex justify-content-center  align-items-center">
+      <h1 className="aboutusTopdiv w-50 d-flex justify-content-center  align-items-center fw-bold text-center">
+        Our goal is to establish fair investment opportunities as well as a
+        quicker, safer, and easier trading system
+      </h1>
     </div>
-  )
-}
+  );
+};

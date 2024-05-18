@@ -1,89 +1,97 @@
-import React from 'react'
-import './Footer.css'
-import logo from '../../assets/images/icons/terazo_logo.png'
-import { Divider } from '@material-ui/core'
-import { useNavigate, Link } from 'react-router-dom'
+import React from "react";
+import "./Footer.css";
+import { Divider } from "@material-ui/core";
+import { useNavigate, Link } from "react-router-dom";
+import logo from "../../assets/images/icons/AssetChain Logo.png";
 
 const Footer = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const componentDidMount = () => {
-    window.scrollTo(0, 0)
-  }
+    window.scrollTo(0, 0);
+  };
   return (
-    <>
-      <div className="nonDiv">
+    <div className="w-100">
+      <div className="nonDiv w-100">
         <Divider
-          className="nonDevdivider"
-          style={{ width: 500, backgroundColor: '#1a60f6', height: 5 }}
+          className="nonDevdivider w-100"
+          style={{ backgroundColor: "#1a60f6", height: 5 }}
         />
       </div>
-      <div className="footer">
-        <div className="footerWrapper">
-          <div className="footerLeft">
+      <div className="footer p-5 w-100">
+        <div className="footerWrapper d-flex flex-column flex-md-row">
+          <div className="footerLeft col-12 col-md-4">
             <div
               className="upperimg"
               onClick={() => {
-                navigate('/')
-                componentDidMount()
+                navigate("/");
+                componentDidMount();
               }}
             >
-              <a href="/">
-                <img alt="logo" src={logo} />
-              </a>
+              <Link to="/" className="link">
+                <img src={logo} alt="logo" className="w-25" />
+              </Link>
             </div>
-            <span>© 2021-2022 Terazo Fintech LLP</span>
+            <span>© 2021-2022 AssetChain Fintech LLP</span>
           </div>
-          <div className="footerRight">
-            <div className="rightCard">
-              <h3>Invest </h3>
-              <div>
+          <div className="footerRight d-flex col-md-8 flex-row">
+            <div className="rightCard d-flex flex-column col-6">
+              <h5 className="fw-bold">Invest </h5>
+              <div className="d-flex flex-column fw-bold">
                 <Link
-                  className="rightCard"
-                  to={'/'}
+                  className="rightCard link mb-3"
+                  to={"/"}
                   onClick={() => {
-                    componentDidMount()
+                    componentDidMount();
                   }}
                 >
                   <span>Home</span>
                 </Link>
 
-                <a className="rightCard" id="investLink" href="/#invest">
+                <a
+                  className="rightCard link mb-3"
+                  id="investLink"
+                  href="/#invest"
+                >
                   <span>Why Invest</span>
                 </a>
 
                 <Link
-                  className="rightCard"
-                  to={'/howitworks'}
+                  className="rightCard link mb-3"
+                  to={"/howitworks"}
                   onClick={() => {
-                    componentDidMount()
+                    componentDidMount();
                   }}
                 >
                   <span>How it works</span>
                 </Link>
               </div>
             </div>
-            <div className="rightCard">
-              <h3>Company</h3>
-              <div>
+            <div className="rightCard d-flex flex-column col-6">
+              <h5 className="fw-bold">Company</h5>
+              <div className="d-flex flex-column fw-bold">
                 <Link
-                  className="rightCard"
-                  to={'/aboutus'}
+                  className="rightCard link mb-3"
+                  to={"/aboutus"}
                   onClick={() => {
-                    componentDidMount()
+                    componentDidMount();
                   }}
                 >
                   <span>About Us</span>
                 </Link>
 
-                <a className="rightCard" id="teamLink" href="/aboutus#team">
+                <a
+                  className="rightCard link mb-3"
+                  id="teamLink "
+                  href="/aboutus#team"
+                >
                   <span>Team</span>
                 </a>
 
                 <Link
-                  className="rightCard"
-                  to={'/contactus'}
+                  className="rightCard link mb-3"
+                  to={"/contactus"}
                   onClick={() => {
-                    componentDidMount()
+                    componentDidMount();
                   }}
                 >
                   <span>Contact Us</span>
@@ -94,45 +102,36 @@ const Footer = () => {
         </div>
       </div>
       <div className="divider"></div>
-      <span className="Copyright">
-        Terazo is a trademark and/or registered trademark of Terazo Network LLP.
-        All rights reserved.
-      </span>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          paddingLeft: '9.9%',
-          paddingRight: '3%',
-        }}
-      >
+      <p className="Copyright p-5 pb-0 w-100">
+        AssetChain Pvt. Ltd. is the owner of the trademark and/or registered
+        trademark AssetChain. All rights reserved.
+      </p>
+      {/* <div className="d-flex flex-column p-5 w-100 footerContent">
         <p className="Disclaimer">
-          This website contains certain forward-looking statements that are
-          subject to various risks and uncertainties. You are cautioned not to
-          place undue reliance on any of these forward-looking statements. This
-          website is maintained by Terazo Fintech LLP in its sole and absolute
-          discretion.
+          Certain forward-looking statements on this website are vulnerable to a
+          number of risks and uncertainties. It is advised that you not rely
+          unduly on any of these forward-looking statements. AssetChain Fintech
+          LLP maintains this website at its full and complete discretion.
         </p>
 
         <p className="Disclaimer">
-          Terazo Fintech LLP is regulated under IFSCA’s Regulatory Sandbox
-          Framework. The information contained on the terazo.network website has
-          been prepared by Terazo Fintech LLP without reference to any
-          particular user's investment requirements or financial situation.
-          Potential investors are encouraged to consult with professional tax,
-          legal, and financial advisors before making any investment. All
-          investments involve risk, including the risk of the loss of all of
-          your invested capital. Please consider carefully the investment
-          objectives, risks, transaction costs, and other expenses related to an
-          investment prior to deciding to invest. Diversification and asset
-          allocation do not ensure profit or guarantee against loss. Investment
-          decisions should be based on an individual's own goals, time horizon,
-          and tolerance for risk. Our materials may include historical
-          appreciation percentages based on sales data and reflect historical
-          price trends. Such information is not intended to be indicative of
-          returns that would have been achieved by Terazo Fintech LLP during
-          such periods. Fees, expenses and other factors may create significant
-          reduction in the performance of an investment.
+          The IFSCA's Regulatory Sandbox Framework governs AssetChain Fintech
+          LLP. AssetChain Fintech LLP has prepared the content on the
+          AssetChain.network website without taking into account the investment
+          needs or financial circumstances of any specific user. Before making
+          any investments, prospective investors are advised to speak with
+          qualified tax, legal, and financial professionals. Risk is a part of
+          all investments, and losing all of your money is one of them. Before
+          making an investment, please carefully examine the investing
+          objectives, risks, transaction costs, and other associated expenses.
+          Asset allocation and diversification do neither guarantee profits or
+          protect against losses. Investment choices ought to be made in light
+          of each person's unique objectives, time horizon, and risk tolerance.
+          Historical price trends and historical appreciation percentages based
+          on sales data may be included in our materials. This information isn't
+          meant to represent the kind of returns AssetChain Fintech LLP would
+          have made at those times. An investment's performance may be
+          significantly reduced by fees, expenditures, and other factors.
         </p>
 
         <p className="Disclaimer">
@@ -145,9 +144,9 @@ const Footer = () => {
           risk of loss. The information contained herein neither constitutes an
           offer for nor a solicitation of interest in any specific offering.
         </p>
-      </div>
-    </>
-  )
-}
+      </div> */}
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

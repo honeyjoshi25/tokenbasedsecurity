@@ -1,19 +1,23 @@
 body {
   font-family: "Manrope", sans-serif;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-  overflow-x: hidden;
-  /* Hide horizontal scrollbar */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* -ms-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory; */
-  /* overflow-y: scroll; */
 }
-/* body section {
-  scroll-snap-align:start;
-} */
 code {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
+}
+.requestModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700;
+  height: 580;
+  background-color: white;
+  border-radius: 10px;
+}
+.bor {
+  border: 1px solid red;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
 }

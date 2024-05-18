@@ -1,20 +1,19 @@
-import React from 'react'
-import './Section4.css'
+import React from "react";
+import "./Section4.css";
 
 export const Section4 = () => {
   return (
-    <div className="aboutusBottomdiv">
-      <header>Get in touch</header>
+    <div className="aboutusBottomdiv d-flex flex-column justify-content-center align-items-center mt-5 p-5">
+      <h1 className="fw-bold">Get in touch</h1>
 
-      <span>
-        For questions on starting to invest or to list your assets on the
-        platform,
-        <br />
-        reach out to us and we’d be happy to help
+      <span className="mt-3 w-75 fs-4 text-center">
+        Please contact us with any inquiries you may have about beginning to
+        invest or listing your assets on the platform, and we would be pleased
+        to assist you
       </span>
-      <a href="mailto:info@terazo.network">
-        <button>Drop us an email</button>
-      </a>
+      <div className="mt-3">
+        <button>Send us an email.</button>
+      </div>
     </div>
-  )
-}
+  );
+};

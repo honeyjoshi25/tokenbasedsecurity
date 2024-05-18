@@ -1,132 +1,16 @@
 .section1Aboutus {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.aboutusHeader {
-  display: flex;
-  margin-top: -138px;
-  /* opacity: 0.4; */
-  height: 800px;
-  background-image: url('../../../assets/images/background/aboutusBG.png');
+  background-image: url("../../../assets/images/background/aboutusBG.png");
   background-size: cover;
-  width: 100vw;
 }
 
-.aboutusHeader header {
-  margin-top: 209px;
-  width: 110%;
-  /* position: absolute; */
-  font-size: 48px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
+.aboutusHeader h1 {
   color: #1e31f9;
-  margin-bottom: 3%;
 }
-
-.aboutusHeader span {
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.18;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000;
-  margin-top: 340px;
-
-  /* left: 7%; */
-}
-
-.aboutusHeaderImg {
-  margin-top: 180px;
-}
-
-.aboutusHeaderImg img {
-  width: 400px;
-  margin-left: 23vw;
-}
-
-/* .aboutusSubheader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 100px;
-} */
-/* 
-.aboutusSubheader header {
-  width: 560px;
-  height: 66px;
-  /* margin: 80px 441px 6px; */
-
-/* font-size: 48px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-} */
-
-/* .aboutusSubheader span {
-  width: 85%;
-  height: 88px;
-  margin: 17px 150px 175px;
-
-  font-size: 22px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.18;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-} */
-
-@media only screen and (min-width: 1400px) {
-  .aboutusHeader {
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    margin-bottom: 10%;
+@media only screen and (max-width: 600px) {
+  .aboutusHeader h1 {
+    width: 100% !important;
   }
-  
-.aboutusHeaderImg img {
-  width: 500px;
-  margin-left: 37vw;
-}
-
-.aboutusHeader header {
-  margin-top: 209px;
-  width: 120%;
-  font-size: 50px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #1e31f9;
-}
-
-.aboutusHeader span {
-  font-size: 22px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.18;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000;
-  margin-top: 340px;
-}
-
+  .aboutusHeader span {
+    width: 100% !important;
+  }
 }

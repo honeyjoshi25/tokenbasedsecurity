@@ -1,70 +1,68 @@
-import React, { useState, useEffect } from 'react'
-import './Header.css'
-import { useNavigate } from 'react-router-dom'
-import logo from '../../assets/images/icons/terazo_logo.png'
-import { RequestInvite } from '../RequestInvite/RequestInvite'
+import React, { useState, useEffect } from "react";
+import "./Header.css";
+import { useNavigate } from "react-router-dom";
+import { RequestInvite } from "../RequestInvite/RequestInvite";
 import { useLocation } from "react-router-dom";
-import { Link } from 'react-router-dom'
-
+import { Link } from "react-router-dom";
 
 const headeData = [
   {
-    title: 'How it works',
-    link: '/howItWorks',
+    title: "How it works",
+    link: "/howItWorks",
   },
   {
-    title: 'About us',
-    link: '/aboutUs',
+    title: "About us",
+    link: "/aboutUs",
   },
-  // {
-  //   title: 'Login',
-  // },
-]
+];
 export const Header = () => {
   const { pathname } = useLocation();
-  const [scroll, setScroll] = useState(false)
+  const [scroll, setScroll] = useState(false);
   const chnageBG = () => {
     if (window.scrollY >= 50) {
-      setScroll(true)
+      setScroll(true);
     } else {
-      setScroll(false)
+      setScroll(false);
     }
-  }
-  window.addEventListener('scroll', chnageBG)
-  const navigate = useNavigate()
+  };
+  window.addEventListener("scroll", chnageBG);
+  const navigate = useNavigate();
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
-    <div className={scroll ? 'headerActive' : 'header'}>
-      <div className="navWrapper">
-        <div className="navLeft" onClick={() => navigate('/')}>
-          <a href="/">
-            <img alt="logo" src={logo} />
-          </a>
-        </div>
+    <div
+      className={
+        scroll
+          ? "headerActive w-100 header w-100 d-flex justify-content-between p-3"
+          : "header w-100 d-flex justify-content-between p-3"
+      }
+    >
+      <div className="navLeft" onClick={() => navigate("/")}>
+        <Link to="/" className="link">
+          <h5>AssetChain</h5>
+        </Link>
+      </div>
 
-        <div className="navRight">
-          {headeData.map((item, index) => {
-            return (
-              <Link to={item.link} className='link'>
-                <div
-                  className="navItem"
-                  key={index}
-
-                  id={window.location.pathname === item.link ? 'active' : ''}
-                >
-                  {item.title}
-                </div>
-              </Link>
-            )
-          })}
-          <RequestInvite />
-        </div>
+      <div className="navRight d-flex align-items-center">
+        {headeData.map((item, index) => {
+          return (
+            <Link to={item.link} className="link m-4">
+              <div
+                className="navItem"
+                key={index}
+                id={window.location.pathname === item.link ? "active" : ""}
+              >
+                {item.title}
+              </div>
+            </Link>
+          );
+        })}
+        <RequestInvite />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

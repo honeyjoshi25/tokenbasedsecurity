@@ -6,19 +6,19 @@ export const Data=[
     {
         img:img5,
         title:'Tokenization',
-        span:'Converting tangible assets into digital tokens',
-        para:'Tokenization breaks up illiquid assets into smaller digital tokens to provide access for fractional investing',
+        span:'Digital tokenization of physical assets',
+        para:'Tokenization facilitates fractional investing by dividing illiquid assets into smaller digital tokens',
     },
     {
         img:img9,
         title:'Smart Contracts',
-        span:'Generating and executing agreements automatically',
-        para:'Digitally automated smart contracts eliminate the need for trusted intermediary and manual processes saving time and costs',
+        span:'Automated creation and implementation of agreements',
+        para:'Digitally enabled smart contracts save time and money by doing away with the need for trusted middlemen and manual procedures',
     },
     {
         img:img10,
         title:'Immutability',
-        span:'Making every transaction permanent and unalterable',
-        para:'The use of blockchain makes every transaction tamper-proof and provides enhanced security',
+        span:'Ensuring that each transaction is final and cannot be changed',
+        para:'Every transaction is tamper-proof when blockchain is used, and security is improved',
     },
 ]
