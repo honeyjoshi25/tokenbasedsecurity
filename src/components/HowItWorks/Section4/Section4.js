@@ -1,73 +1,81 @@
-import React, { useState } from 'react'
-import './Section4.css'
-import img3 from '../../../assets/images/img/right_side_image.svg'
-import { Data } from './Data'
-
-import { IconContext } from 'react-icons'
-import { FiPlus, FiMinus } from 'react-icons/fi'
-
-
+import React from "react";
+import "./Section4.css";
+import img3 from "../../../assets/images/img/right_side_image.svg";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 export const Section4 = () => {
-  const [clicked, setClicked] = useState(false)
-
-  const toggle = (index) => {
-    if (clicked === index) {
-      //if clicked question is already active, then close it
-      return setClicked(null)
-    }
-
-    setClicked(index)
-  }
   return (
-    <div className="hiwSec4">
-    <div className="hiwSec4Left">
-      <div className="hiwSec4LeftTop">
-        <header>Decoding Tokenization</header>
-        <span>Simple answers to complex investment questions.</span>
+    <div
+      className="hiwSec4 d-flex flex-column flex-md-row align-items-center  justify-content-center  mt-5 p-5"
+      id="sec4"
+    >
+      <div className="hiwSec4Left col-12 col-md-6 p-5">
+        <div className="hiwSec4LeftTop d-flex justify-content-center  flex-column ">
+          <h1 className="fw-bold">Decoding Tokenization</h1>
+          <h6 className="text-muted fw-bold mt-1">
+            Easy solutions to difficult investment queries
+          </h6>
+        </div>
+        <div className="hiwSec4LeftBottom mt-4">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ArrowDropDownIcon />}
+              aria-controls="panel1-content"
+              id="panel1-header"
+            >
+              <h6 className="fw-bold">
+                What investments are made in the private market?
+              </h6>
+            </AccordionSummary>
+            <AccordionDetails>
+              <p>
+                Real Estate, Venture Capital/Private equity funds, and shares of
+                unlisted corporations are examples of investments that are not
+                listed on an exchange.
+              </p>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ArrowDropDownIcon />}
+              aria-controls="panel2-content"
+              id="panel2-header"
+            >
+              <h6 className="fw-bold">Tokenization: What is it?</h6>
+            </AccordionSummary>
+            <AccordionDetails>
+              <p>
+                The process of fractionalizing and securitizing an asset into
+                smaller pieces by digitally recording each component on a
+                blockchain is known as Tokenization.
+              </p>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ArrowDropDownIcon />}
+              aria-controls="panel3-content"
+              id="panel3-header"
+            >
+              <h6 className="fw-bold">What are security tokens?</h6>
+            </AccordionSummary>
+            <AccordionDetails>
+              <p>
+                Traditional securities, such as real assets, stock, debt, and
+                units of a fund that indicate beneficial interest, are
+                represented digitally on a distributed ledger or blockchain by
+                Security Tokens.
+              </p>
+            </AccordionDetails>
+          </Accordion>
+        </div>
       </div>
-      <div className="hiwSec4LeftBottom">
-        <IconContext.Provider value={{ color: '#1a60f6', size: '25px' }}>
-          <div className="accordionsec4">
-            <div className="accordionWrapper">
-              {Data.map((item, index) => {
-                return (
-                  <>
-                    <div
-                      className="wrap"
-                      onClick={() => toggle(index)}
-                      key={index}
-                    >
-                      <span>
-                        {clicked === index ? (
-                          <FiMinus
-                            style={{ marginTop: 15, cursor: 'pointer' }}
-                          />
-                        ) : (
-                          <FiPlus
-                            style={{ marginTop: 15, cursor: 'pointer' }}
-                          />
-                        )}
-                      </span>
-                      <h3>{item.question}</h3>
-                    </div>
-
-                    {clicked === index ? (
-                      <div className="dropdown">
-                        <p>{item.answer}</p>
-                      </div>
-                    ) : null}
-                  </>
-                )
-              })}
-            </div>
-          </div>
-        </IconContext.Provider>
+      <div className="hiwSec4Right col-12 col-md-6 d-flex justify-content-md-end justify-content-center">
+        <img src={img3} alt="" className="w-75" />
       </div>
     </div>
-    <div className="hiwSec4Right">
-      <img src={img3} alt="" />
-    </div>
-  </div>
-  )
-}
+  );
+};

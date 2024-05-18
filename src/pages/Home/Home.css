@@ -1,12 +1,1 @@
-.home {
-  margin-top: 50px;
-  margin-bottom: 150px;
-  width: 98vw;
-  margin-bottom: -28%;
-}
 
-@media only screen and (min-width: 1400px) {
-  .home {
-    margin-bottom: -24%;
-  }
-}
