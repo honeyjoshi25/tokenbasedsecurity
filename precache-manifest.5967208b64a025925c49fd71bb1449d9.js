@@ -192,12 +192,12 @@ self.__precacheManifest = [
     "url": "/tokenbasedsecurity/static/media/img_BGAboutus.b28edd43.png"
   },
   {
-    "revision": "2f88df2526d5bbd66ce2d525e25ee36e",
-    "url": "/tokenbasedsecurity/static/media/img_pattern2.2f88df25.svg"
-  },
-  {
     "revision": "793570ee8c4b219f7400823a8f5d859a",
     "url": "/tokenbasedsecurity/static/media/img_pattern1.793570ee.svg"
+  },
+  {
+    "revision": "2f88df2526d5bbd66ce2d525e25ee36e",
+    "url": "/tokenbasedsecurity/static/media/img_pattern2.2f88df25.svg"
   },
   {
     "revision": "a67b3f436e7e89f2a805114db71994a3",
