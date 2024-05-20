@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Router, Routes, useLocation } from "react-router-dom";
 import React, { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import { Header } from "./components/Header-2/Header";
@@ -11,10 +11,10 @@ function App() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.screenTop(0, 0);
+    window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <>
+    <Router basename="/tokenbasedsecurity">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
         <Route path="/contactUs" element={<ContactUs />} />
       </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 
