@@ -14,12 +14,16 @@ function App() {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/aboutUs" element={<AboutUs />} />
-      <Route path="/howItWorks" element={<HowItworks />} />
-      <Route path="/contactUs" element={<ContactUs />} />
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/howItWorks" element={<HowItworks />} />
+        <Route path="/contactUs" element={<ContactUs />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
