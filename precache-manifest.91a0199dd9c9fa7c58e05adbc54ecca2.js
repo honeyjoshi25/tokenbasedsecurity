@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6112570cd2c67e48fb64",
+    "revision": "97ba648a90969837792b",
     "url": "/tokenbasedsecurity/static/css/main.9afd7ff2.chunk.css"
   },
   {
-    "revision": "6112570cd2c67e48fb64",
-    "url": "/tokenbasedsecurity/static/js/main.6112570c.chunk.js"
+    "revision": "97ba648a90969837792b",
+    "url": "/tokenbasedsecurity/static/js/main.97ba648a.chunk.js"
   },
   {
     "revision": "fbaa8460e712230681b5",
@@ -196,12 +196,12 @@ self.__precacheManifest = [
     "url": "/tokenbasedsecurity/static/media/img_pattern2.2f88df25.svg"
   },
   {
-    "revision": "793570ee8c4b219f7400823a8f5d859a",
-    "url": "/tokenbasedsecurity/static/media/img_pattern1.793570ee.svg"
-  },
-  {
     "revision": "a67b3f436e7e89f2a805114db71994a3",
     "url": "/tokenbasedsecurity/static/media/img_bg.a67b3f43.png"
+  },
+  {
+    "revision": "793570ee8c4b219f7400823a8f5d859a",
+    "url": "/tokenbasedsecurity/static/media/img_pattern1.793570ee.svg"
   },
   {
     "revision": "aa7e8da0926b6d3c90916e87bce79abe",
@@ -216,7 +216,7 @@ self.__precacheManifest = [
     "url": "/tokenbasedsecurity/static/media/img_pattern4.7cb8cb23.svg"
   },
   {
-    "revision": "e889015db34204d2e72ca7dc872557bc",
+    "revision": "46196b6d9ff0d631f66eef28e7c97ed0",
     "url": "/tokenbasedsecurity/index.html"
   }
 ];
