@@ -1,4 +1,4 @@
-import { Route, Router, Routes, useLocation } from "react-router-dom";
+import { Route, HashRouter, Routes, useLocation } from "react-router-dom";
 import React, { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import { Header } from "./components/Header-2/Header";
@@ -17,7 +17,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/tokenbasedsecurity" element={<Home />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/howItWorks" element={<HowItworks />} />
         <Route path="/contactUs" element={<ContactUs />} />
