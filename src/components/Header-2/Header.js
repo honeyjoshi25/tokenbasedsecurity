@@ -24,7 +24,7 @@ export const Header = () => {
             >
               <MdMenu size={24} />
             </button>
-            <Link to="/tokenbasedsecurity" className="link">
+            <Link to="/" className="link">
               <img
                 src={logo}
                 alt="logo"
@@ -57,7 +57,7 @@ export const Header = () => {
       <nav className={!navVisible ? "header-sidebar" : ""}>
         <div>
           <div className="d-flex justify-content-between w-100">
-            <Link to="/tokenbasedsecurity" className="link">
+            <Link to="/" className="link">
               <img src={logo} alt="logo" height={25} className="ps-2" />
             </Link>
             {navVisible ? (

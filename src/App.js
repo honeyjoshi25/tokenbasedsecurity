@@ -17,7 +17,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/tokenbasedsecurity" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/howItWorks" element={<HowItworks />} />
         <Route path="/contactUs" element={<ContactUs />} />

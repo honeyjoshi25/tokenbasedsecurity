@@ -24,7 +24,7 @@ const Footer = () => {
                 navigate("/");
               }}
             >
-              <Link to="/tokenbasedsecurity" className="link">
+              <Link to="/" className="link">
                 <img src={logo} alt="logo" className="w-25" />
               </Link>
             </div>
@@ -36,7 +36,8 @@ const Footer = () => {
               <div className="d-flex flex-column fw-bold">
                 <Link
                   className="rightCard link mb-3"
-                  to="/tokenbasedsecurity"
+                  to="/
+  "
                 >
                   <span>Home</span>
                 </Link>
