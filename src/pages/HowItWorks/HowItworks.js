@@ -6,10 +6,13 @@ import { Section3 } from "../../components/HowItWorks/Section3/Section3";
 import { Section4 } from "../../components/HowItWorks/Section4/Section4";
 import { Section5 } from "../../components/HowItWorks/Section5/Section5";
 import { Section6 } from "../../components/HowItWorks/Section6/Section6";
+import { Header } from "../../components/Header-2/Header";
+import Footer from "../../components/Footer/Footer";
 
 export const HowItworks = () => {
   return (
     <>
+      <Header />
       <div className="howItworks">
         <Section1 />
         <Section2 />
@@ -18,6 +21,7 @@ export const HowItworks = () => {
         <Section5 />
         <Section6 />
       </div>
+      <Footer />
     </>
   );
 };

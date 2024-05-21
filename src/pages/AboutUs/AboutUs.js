@@ -5,6 +5,8 @@ import { Section1 } from "../../components/AboutUs/Section1/Section1";
 import { Section2 } from "../../components/AboutUs/Section2/Section2";
 import { Section3 } from "../../components/AboutUs/Section3/Section3";
 import { Section4 } from "../../components/AboutUs/Section4/Section4";
+import { Header } from "../../components/Header-2/Header";
+import Footer from "../../components/Footer/Footer";
 
 export const AboutUs = () => {
   useEffect(() => {
@@ -17,12 +19,14 @@ export const AboutUs = () => {
   }, []);
   return (
     <>
+      <Header />
       <div className="aboutus">
         <Section1 />
         <Section2 />
         <Section3 />
         <Section4 />
       </div>
+      <Footer />
     </>
   );
 };
