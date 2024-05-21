@@ -5,8 +5,6 @@ import Modal from "@mui/material/Modal";
 import TextField from "@mui/material/TextField";
 import "./RequestInvite.css";
 import close from "../../assets/images/icons/img_close.svg";
-import axios from "axios";
-import { baseUrl } from "../../config/baseUrl";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { MenuItem } from "@mui/material";
@@ -16,76 +14,7 @@ export const RequestInvite = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [isSubmit, setSubmit] = useState(false);
-
-  const [values, setValues] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    country: "",
-    message: "",
-  });
-
-  let name, value;
-  const handleChange = (e) => {
-    console.log(e);
-    name = e.target.name;
-    value = e.target.value;
-    setValues({ ...values, [name]: value });
-    console.log(name, value);
-  };
-
-  const submit = async () => {
-    await axios
-      .post(baseUrl.UrlLocal + "addNewRequest", values)
-      .then((response) => {
-        if (response) {
-          if (response.data.status === 200) {
-            toast.success(response.data.message, {
-              position: toast.POSITION.TOP_RIGHT,
-              autoClose: 3000,
-            });
-            setValues({
-              name: "",
-              email: "",
-              phone: "",
-              country: "",
-              message: "",
-            });
-            // setOpen(false)
-            setSubmit(true);
-          } else {
-            toast.error(response.data.message, {
-              position: toast.POSITION.TOP_RIGHT,
-              autoClose: 3000,
-            });
-            setValues({
-              name: "",
-              email: "",
-              phone: "",
-              country: "",
-              message: "",
-            });
-            setOpen(false);
-          }
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-        toast.error("Internal Server Error occured!!", {
-          position: toast.POSITION.TOP_RIGHT,
-          autoClose: 3000,
-        });
-        setValues({
-          name: "",
-          email: "",
-          phone: "",
-          country: "",
-          message: "",
-        });
-        setOpen(false);
-      });
-  };
+  const [isSubmit, setIsSubmit] = useState(false);
 
   return (
     <div className="RequestInvite">
@@ -146,16 +75,12 @@ export const RequestInvite = () => {
                   label="Name"
                   variant="outlined"
                   name="name"
-                  value={values.name}
-                  onChange={handleChange}
                 />
                 <TextField
                   id="outlined-basic"
                   label="Email"
                   variant="outlined"
                   name="email"
-                  value={values.email}
-                  onChange={handleChange}
                 />
               </Box>
               <Box
@@ -176,8 +101,6 @@ export const RequestInvite = () => {
                   label="Phone"
                   variant="outlined"
                   name="phone"
-                  value={values.phone}
-                  onChange={handleChange}
                 />
                 <TextField
                   select
@@ -185,8 +108,6 @@ export const RequestInvite = () => {
                   label="Country"
                   variant="outlined"
                   name="country"
-                  value={values.country}
-                  onChange={handleChange}
                 >
                   <MenuItem value="India">India</MenuItem>
                   <MenuItem value="USA">USA</MenuItem>
@@ -203,8 +124,6 @@ export const RequestInvite = () => {
                 label="Your Message"
                 variant="outlined"
                 name="message"
-                value={values.message}
-                onChange={handleChange}
               />
               <Typography
                 id="modal-modal-description"
@@ -216,7 +135,10 @@ export const RequestInvite = () => {
                 We will not share your personal details or send unsolicited
                 emails
               </Typography>
-              <button onClick={submit} className="mt-4 rounded-pill p-2 w-25">
+              <button
+                className="mt-4 rounded-pill p-2 w-25"
+                onClick={() => setIsSubmit(true)}
+              >
                 Submit
               </button>
             </div>

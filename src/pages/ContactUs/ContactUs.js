@@ -1,8 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ContactUs.css";
-
-import axios from "axios";
-import { baseUrl } from "../../config/baseUrl";
 import { TextField } from "@mui/material";
 import location from "../../assets/images/icons/icn_location.svg";
 import email from "../../assets/images/icons/icn_email.svg";
@@ -11,84 +8,6 @@ import "react-toastify/dist/ReactToastify.css";
 toast.configure();
 
 export const ContactUs = () => {
-  const [values, setValues] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-  // const [isSubmit, setSubmit] = useState(false)
-
-  let name, value;
-  const handleChange = (e) => {
-    console.log(e);
-    name = e.target.name;
-    value = e.target.value;
-    setValues({ ...values, [name]: value });
-    console.log(name, value);
-  };
-
-  const submit = async () => {
-    console.log(values, "Values");
-    if (
-      values.name === "" ||
-      values.email === "" ||
-      values.phone === "" ||
-      values.message === ""
-    ) {
-      toast.error(
-        "Please Fill All The Required Fields Before Submitting The Form!!",
-        {
-          position: toast.POSITION.TOP_RIGHT,
-          autoClose: 3000,
-        }
-      );
-    } else {
-      await axios
-        .post(baseUrl.UrlLocal + "contact/addNewRequest", values)
-        .then((response) => {
-          if (response) {
-            if (response.data.status === 200) {
-              toast.success(response.data.message, {
-                position: toast.POSITION.TOP_RIGHT,
-                autoClose: 3000,
-              });
-              setValues({
-                name: "",
-                email: "",
-                phone: "",
-                message: "",
-              });
-            } else {
-              toast.error(response.data.message, {
-                position: toast.POSITION.TOP_RIGHT,
-                autoClose: 3000,
-              });
-              setValues({
-                name: "",
-                email: "",
-                phone: "",
-                message: "",
-              });
-            }
-          }
-        })
-        .catch((error) => {
-          console.log(error);
-          toast.error("Internal Server Error occured!!", {
-            position: toast.POSITION.TOP_RIGHT,
-            autoClose: 3000,
-          });
-          setValues({
-            name: "",
-            email: "",
-            phone: "",
-            message: "",
-          });
-        });
-    }
-  };
-
   return (
     <div className="contactUs mt-5 p-5 d-flex flex-column flex-md-row">
       <div className="contactUsLeft col-12 col-md-6 d-flex align-items-center  justify-content-center flex-column  ">
@@ -133,8 +52,6 @@ export const ContactUs = () => {
               type="text"
               className="w-100 mb-2"
               name="name"
-              value={values.name}
-              onChange={handleChange}
             />
           </div>
 
@@ -146,8 +63,6 @@ export const ContactUs = () => {
               type="email"
               className="w-100 mb-2"
               name="email"
-              value={values.email}
-              onChange={handleChange}
             />
           </div>
 
@@ -159,8 +74,6 @@ export const ContactUs = () => {
               type="text"
               className="w-100 mb-2"
               name="phone"
-              value={values.phone}
-              onChange={handleChange}
             />
           </div>
 
@@ -174,15 +87,11 @@ export const ContactUs = () => {
               type="text"
               className="w-100 mb-2"
               name="message"
-              value={values.message}
-              onChange={handleChange}
             />
           </div>
 
           <div className="ContactUSButton w-100">
-            <button onClick={submit} className="w-100 p-2">
-              Submit
-            </button>
+            <button className="w-100 p-2">Submit</button>
           </div>
         </div>
       </div>
