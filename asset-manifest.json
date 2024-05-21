@@ -1,7 +1,7 @@
 {
   "main.css": "/tokenbasedsecurity/static/css/main.9afd7ff2.chunk.css",
-  "main.js": "/tokenbasedsecurity/static/js/main.52968ff4.chunk.js",
-  "main.js.map": "/tokenbasedsecurity/static/js/main.52968ff4.chunk.js.map",
+  "main.js": "/tokenbasedsecurity/static/js/main.26677079.chunk.js",
+  "main.js.map": "/tokenbasedsecurity/static/js/main.26677079.chunk.js.map",
   "static/css/1.af665c5e.chunk.css": "/tokenbasedsecurity/static/css/1.af665c5e.chunk.css",
   "static/js/1.fbaa8460.chunk.js": "/tokenbasedsecurity/static/js/1.fbaa8460.chunk.js",
   "static/js/1.fbaa8460.chunk.js.map": "/tokenbasedsecurity/static/js/1.fbaa8460.chunk.js.map",
@@ -55,6 +55,6 @@
   "static/css/main.9afd7ff2.chunk.css.map": "/tokenbasedsecurity/static/css/main.9afd7ff2.chunk.css.map",
   "static/css/1.af665c5e.chunk.css.map": "/tokenbasedsecurity/static/css/1.af665c5e.chunk.css.map",
   "index.html": "/tokenbasedsecurity/index.html",
-  "precache-manifest.38128cb114af20cb0677923976478da2.js": "/tokenbasedsecurity/precache-manifest.38128cb114af20cb0677923976478da2.js",
+  "precache-manifest.50f011d3c66c246ad3b924d5917976c2.js": "/tokenbasedsecurity/precache-manifest.50f011d3c66c246ad3b924d5917976c2.js",
   "service-worker.js": "/tokenbasedsecurity/service-worker.js"
 }

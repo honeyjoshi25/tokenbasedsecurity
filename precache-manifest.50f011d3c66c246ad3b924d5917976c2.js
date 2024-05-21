@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "52968ff49a4917bdea52",
+    "revision": "266770795e6fbe535493",
     "url": "/tokenbasedsecurity/static/css/main.9afd7ff2.chunk.css"
   },
   {
-    "revision": "52968ff49a4917bdea52",
-    "url": "/tokenbasedsecurity/static/js/main.52968ff4.chunk.js"
+    "revision": "266770795e6fbe535493",
+    "url": "/tokenbasedsecurity/static/js/main.26677079.chunk.js"
   },
   {
     "revision": "fbaa8460e712230681b5",
@@ -216,7 +216,7 @@ self.__precacheManifest = [
     "url": "/tokenbasedsecurity/static/media/img_pattern4.7cb8cb23.svg"
   },
   {
-    "revision": "2090322f3c3caa3daa6cd6dffe630d32",
+    "revision": "1afcea459c2ed3c32f525e125885d349",
     "url": "/tokenbasedsecurity/index.html"
   }
 ];
