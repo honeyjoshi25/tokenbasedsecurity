@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { Divider } from "@material-ui/core";
+import { Divider } from "@mui/material";
 import { useNavigate, Link } from "react-router-dom";
 import logo from "../../assets/images/icons/AssetChain Logo.png";
 
