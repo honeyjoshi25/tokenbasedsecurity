@@ -6,9 +6,7 @@ import logo from "../../assets/images/icons/AssetChain Logo.png";
 
 const Footer = () => {
   const navigate = useNavigate();
-  const componentDidMount = () => {
-    window.scrollTo(0, 0);
-  };
+
   return (
     <div className="w-100">
       <div className="nonDiv w-100">
@@ -24,10 +22,9 @@ const Footer = () => {
               className="upperimg"
               onClick={() => {
                 navigate("/");
-                componentDidMount();
               }}
             >
-              <Link to="/" className="link">
+              <Link to="/tokenbasedsecurity" className="link">
                 <img src={logo} alt="logo" className="w-25" />
               </Link>
             </div>
@@ -39,10 +36,7 @@ const Footer = () => {
               <div className="d-flex flex-column fw-bold">
                 <Link
                   className="rightCard link mb-3"
-                  to={"/"}
-                  onClick={() => {
-                    componentDidMount();
-                  }}
+                  to="/tokenbasedsecurity"
                 >
                   <span>Home</span>
                 </Link>
@@ -55,13 +49,7 @@ const Footer = () => {
                   <span>Why Invest</span>
                 </a>
 
-                <Link
-                  className="rightCard link mb-3"
-                  to={"/howitworks"}
-                  onClick={() => {
-                    componentDidMount();
-                  }}
-                >
+                <Link className="rightCard link mb-3" to={"/howitworks"}>
                   <span>How it works</span>
                 </Link>
               </div>
@@ -69,13 +57,7 @@ const Footer = () => {
             <div className="rightCard d-flex flex-column col-6">
               <h5 className="fw-bold">Company</h5>
               <div className="d-flex flex-column fw-bold">
-                <Link
-                  className="rightCard link mb-3"
-                  to={"/aboutus"}
-                  onClick={() => {
-                    componentDidMount();
-                  }}
-                >
+                <Link className="rightCard link mb-3" to={"/aboutus"}>
                   <span>About Us</span>
                 </Link>
 
@@ -87,13 +69,7 @@ const Footer = () => {
                   <span>Team</span>
                 </a>
 
-                <Link
-                  className="rightCard link mb-3"
-                  to={"/contactus"}
-                  onClick={() => {
-                    componentDidMount();
-                  }}
-                >
+                <Link className="rightCard link mb-3" to={"/contactus"}>
                   <span>Contact Us</span>
                 </Link>
               </div>
