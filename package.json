@@ -1,6 +1,5 @@
 {
   "name": "tokenbasedsecurity",
-  "homepage": "https://honeyjoshi25.github.io/tag-trail-ui",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -25,8 +24,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
