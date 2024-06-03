@@ -42,14 +42,6 @@ const Footer = () => {
                   <span>Home</span>
                 </Link>
 
-                <a
-                  className="rightCard link mb-3"
-                  id="investLink"
-                  href="/#invest"
-                >
-                  <span>Why Invest</span>
-                </a>
-
                 <Link className="rightCard link mb-3" to={"/howitworks"}>
                   <span>How it works</span>
                 </Link>
@@ -61,14 +53,6 @@ const Footer = () => {
                 <Link className="rightCard link mb-3" to={"/aboutus"}>
                   <span>About Us</span>
                 </Link>
-
-                <a
-                  className="rightCard link mb-3"
-                  id="teamLink "
-                  href="/aboutus#team"
-                >
-                  <span>Team</span>
-                </a>
 
                 <Link className="rightCard link mb-3" to={"/contactus"}>
                   <span>Contact Us</span>
