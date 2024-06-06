@@ -12,8 +12,7 @@ export const Data = [
     img: img3,
     srcset:
       "img/jeremy-mcgilvrey-mum-4-d-b-0-vs-e-unsplash-1@2x.png 2x,img/jeremy-mcgilvrey-mum-4-d-b-0-vs-e-unsplash-1@3x.png 3x",
-    para:
-      "With 25 years in design and development, Alex has managed over 4Mn+ sq. ft. of real estate and founded Amaya Properties, known for award-winning projects and quality construction.",
+    para: "With 25 years in design and development, Alex has managed over 4Mn+ sq. ft. of real estate and founded Amaya Properties, known for award-winning projects and quality construction.",
   },
   {
     title: "Rohan Mehta",
@@ -22,8 +21,7 @@ export const Data = [
     img: img2,
     srcset:
       "img/jeremy-mcgilvrey-mum-4-d-b-0-vs-e-unsplash-1@2x.png 2x,img/jeremy-mcgilvrey-mum-4-d-b-0-vs-e-unsplash-1@3x.png 3x",
-    para:
-      "Rohan, with an M.S. in Finance and B.Com., has 7 years of experience in real estate acquisitions and development.",
+    para: "Rohan, with an M.S. in Finance and B.Com., has 7 years of experience in real estate acquisitions and development.",
   },
   {
     title: "Neha Sharma",
@@ -32,8 +30,7 @@ export const Data = [
     img: img1,
     srcset:
       "img/jeremy-mcgilvrey-mum-4-d-b-0-vs-e-unsplash-1@2x.png 2x,img/jeremy-mcgilvrey-mum-4-d-b-0-vs-e-unsplash-1@3x.png 3x",
-    para:
-      "With an M.S. in Real Estate and B.Sc. in Finance, Neha has 5 years of experience in development and investment management.",
+    para: "With an M.S. in Real Estate and B.Sc. in Finance, Neha has 5 years of experience in development and investment management.",
   },
   {
     title: "Ankita Kapoor",
@@ -42,8 +39,7 @@ export const Data = [
     img: img4,
     srcset:
       "img/jeremy-mcgilvrey-mum-4-d-b-0-vs-e-unsplash-1@2x.png 2x,img/jeremy-mcgilvrey-mum-4-d-b-0-vs-e-unsplash-1@3x.png 3x",
-    para:
-      "Arjun, a Chartered Accountant with an M.B.A. and L.L.B., has 7 years of experience in investment banking and venture capital.",
+    para: "Ankita, a Chartered Accountant with an M.B.A. and L.L.B., has 7 years of experience in investment banking and venture capital.",
   },
   {
     title: "Kavita Patel",
@@ -52,7 +48,6 @@ export const Data = [
     img: img5,
     srcset:
       "img/jeremy-mcgilvrey-mum-4-d-b-0-vs-e-unsplash-1@2x.png 2x,img/jeremy-mcgilvrey-mum-4-d-b-0-vs-e-unsplash-1@3x.png 3x",
-    para:
-      "Kavita, a Company Secretary with an M.B.A. and L.L.B., brings 10 years of regulatory compliance experience.",
+    para: "Kavita, a Company Secretary with an M.B.A. and L.L.B., brings 10 years of regulatory compliance experience.",
   },
 ];
